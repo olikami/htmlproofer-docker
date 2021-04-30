@@ -1,5 +1,3 @@
 FROM ruby:3.0-alpine
 
-RUN apk add build-base libcurl
-
-RUN gem install html-proofer -v 3.19.1
+RUN apk add --no-cache build-base libcurl && gem install html-proofer -v 3.19.1
